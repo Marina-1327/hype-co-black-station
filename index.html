@@ -1,1 +1,311 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+  <title>Hype Black Station</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background: #050505;
+      color: #fff;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    header {
+      min-height: 100vh;
+      padding: 30px 22px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      background:
+        radial-gradient(circle at 80% 20%, rgba(255, 0, 255, 0.20), transparent 30%),
+        radial-gradient(circle at 20% 80%, rgba(157, 78, 221, 0.18), transparent 30%),
+        #050505;
+    }
+
+    .top {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-size: 25px;
+      font-weight: 900;
+      letter-spacing: -1px;
+    }
+
+    .logo span {
+      color: #ff00ff;
+    }
+
+    .menu {
+      border: 1px solid #333;
+      padding: 9px 14px;
+      border-radius: 30px;
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    .hero {
+      max-width: 700px;
+    }
+
+    .tag {
+      color: #ff00ff;
+      font-size: 12px;
+      font-weight: bold;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      margin-bottom: 18px;
+    }
+
+    h1 {
+      font-size: clamp(52px, 14vw, 110px);
+      line-height: 0.82;
+      letter-spacing: -6px;
+      text-transform: uppercase;
+      margin-bottom: 30px;
+    }
+
+    h1 span {
+      color: #ff00ff;
+    }
+
+    .hero p {
+      color: #bdbdbd;
+      font-size: 16px;
+      line-height: 1.6;
+      max-width: 470px;
+      margin-bottom: 30px;
+    }
+
+    .button {
+      display: inline-block;
+      background: #ff00ff;
+      color: #000;
+      text-decoration: none;
+      padding: 16px 25px;
+      font-weight: 900;
+      text-transform: uppercase;
+      font-size: 13px;
+      letter-spacing: 1px;
+      border-radius: 3px;
+    }
+
+    .button:hover {
+      background: #fff;
+    }
+
+    .bottom-text {
+      font-size: 11px;
+      color: #777;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+    }
+
+    section {
+      padding: 80px 22px;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    .section-label {
+      color: #ff00ff;
+      font-size: 11px;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      margin-bottom: 12px;
+    }
+
+    h2 {
+      font-size: 42px;
+      line-height: 0.95;
+      text-transform: uppercase;
+      letter-spacing: -2px;
+      margin-bottom: 35px;
+    }
+
+    .services {
+      display: grid;
+      gap: 12px;
+    }
+
+    .service {
+      border: 1px solid #222;
+      padding: 22px;
+      background: #0b0b0b;
+    }
+
+    .service h3 {
+      font-size: 20px;
+      text-transform: uppercase;
+      margin-bottom: 8px;
+    }
+
+    .service p {
+      color: #888;
+      font-size: 13px;
+      line-height: 1.5;
+    }
+
+    .price {
+      color: #ff00ff;
+      font-weight: bold;
+      margin-top: 15px;
+    }
+
+    .booking {
+      background: #ff00ff;
+      color: #000;
+      padding: 45px 25px;
+      text-align: center;
+      max-width: none;
+    }
+
+    .booking h2 {
+      margin-bottom: 15px;
+    }
+
+    .booking p {
+      max-width: 500px;
+      margin: 0 auto 25px;
+      line-height: 1.5;
+    }
+
+    .booking .button {
+      background: #000;
+      color: #fff;
+    }
+
+    footer {
+      padding: 30px 22px;
+      border-top: 1px solid #222;
+      color: #666;
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      text-align: center;
+    }
+
+    @media (min-width: 700px) {
+      .services {
+        grid-template-columns: repeat(3, 1fr);
+      }
+
+      section {
+        padding: 110px 40px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <div class="top">
+      <div class="logo">HYPE <span>BLACK</span></div>
+      <div class="menu">Black Station</div>
+    </div>
+
+    <div class="hero">
+      <div class="tag">Arte • Cultura • Conceito</div>
+
+      <h1>
+        Não é<br>
+        pra ser<br>
+        <span>básico.</span>
+      </h1>
+
+      <p>
+        Nail art para quem tem personalidade.
+        Aqui sua unha também faz parte do seu estilo.
+      </p>
+
+      <a href="#agendar" class="button">
+        Agendar horário
+      </a>
+    </div>
+
+    <div class="bottom-text">
+      Hype Black Station — Nail Art Studio
+    </div>
+  </header>
+
+  <section>
+    <div class="section-label">Serviços</div>
+
+    <h2>
+      Escolha<br>
+      sua unha.
+    </h2>
+
+    <div class="services">
+
+      <div class="service">
+        <h3>Pequeno / Médio</h3>
+        <p>Nail art simples</p>
+        <div class="price">R$ 150</div>
+      </div>
+
+      <div class="service">
+        <h3>Pequeno / Médio</h3>
+        <p>Nail art média</p>
+        <div class="price">R$ 170</div>
+      </div>
+
+      <div class="service">
+        <h3>Pequeno / Médio</h3>
+        <p>Nail art extra</p>
+        <div class="price">R$ 190</div>
+      </div>
+
+      <div class="service">
+        <h3>Grande</h3>
+        <p>Nail art simples</p>
+        <div class="price">R$ 160</div>
+      </div>
+
+      <div class="service">
+        <h3>Grande</h3>
+        <p>Nail art média</p>
+        <div class="price">R$ 180</div>
+      </div>
+
+      <div class="service">
+        <h3>Grande</h3>
+        <p>Nail art extra</p>
+        <div class="price">R$ 200</div>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="agendar" class="booking">
+    <h2>Vamos criar?</h2>
+
+    <p>
+      Escolha seu procedimento, envie sua referência,
+      escolha seu horário e faça o pagamento do sinal.
+    </p>
+
+    <a href="#" class="button">
+      Começar agendamento
+    </a>
+  </section>
+
+  <footer>
+    Hype Black Station © 2026
+  </footer>
+
+</body>
+</html>
